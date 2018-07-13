@@ -1,6 +1,20 @@
 /*
  * Create a list that holds all of your cards
  */
+const deck = document.querySelector('.deck'); //create variable deck, define as element with class deck
+console.log('deck'); //print word deck, type word deck will show children elements of deck
+
+deck.addEventListener('click', event => { //add event listener to deck instead of individual cards to improve performance
+  const clickTarget = event.target; //create variable clickTarget and assign target event to it
+  if(clickTarget.classList.contains('card')){ //parameter search for any elements in deck with a class of card.
+                                             //  Since the event listener is added to the deck, we know thatt the target is the deeck.
+  clickTarget.classList.toggle('open') ; //clicking on the target will add the class 'open' because it isn't there.
+                                        //  If I click on the card again it will remove the class 'open'
+  clickTarget.classList.toggle('show') ; //clicking on the target will add the class 'show' because it isn't there.
+                                        //  If I click on the card again it will remove the class 'show'
+}
+  });
+
 
 
 /*
