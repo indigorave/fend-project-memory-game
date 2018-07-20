@@ -114,7 +114,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.438)
+  background: gray;
 }
 
 .modal_body {
@@ -137,9 +137,10 @@ h1 {
 .modal_stats {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   padding: 1rem;
-  border-bottom: 1px solid gray;
+  font-weight: bolder;
+
 }
 
 .modal_close {
@@ -147,14 +148,9 @@ h1 {
   font-size: 2rem;
 }
 
-.modal_buttons {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-}
-
 .modal_button {
-  width: 60px;
+padding-left: 2rem;
+  width: 150px;
   height: 30px;
 }
 

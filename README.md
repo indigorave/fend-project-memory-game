@@ -1,20 +1,23 @@
-# Memory Game Project
+# Memory Game Project by Tracy Fussell
 
 ## Table of Contents
 
+* [Description](#description)
 * [Instructions](#instructions)
 * [Contributing](#contributing)
+* [Acknowledgements](#acknowledgements)
+
+## Description
+This memory game project was part of the FEND Grow with Google Scholarship program.  It as simple memory game requiring players to match 8 pairs of randomly generated images.  The game tracks moves and time elapsed.  The play starts with 3 stars.  Every 10 moves a star is deducted from the score.  Players can reset the game at any time or choose to replay once the game is complete.
 
 ## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+The code for this project is written in html, css and javascript.  It requires a browser that support ES6 and allows the player's browser to run scripts.
 
 ## Contributing
+As this project will become part of my portfolio, I will not be merging pull requests in to the project. Thank you for your understanding.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## Acknowledgements
+I would like to thank Ryan Waite, Matthew Cranford.  Their webinars and walkthroughs were instrumental in helping me understand a number of more complicated processes.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+Ryan Waite's Memory Game Walkthrough  https://www.youtube.com/watch?v=oECVwum-7Zc&t=1351s
+Matthew Cranford's Memory Game Walkthrough  https://matthewcranford.com/memory-game-walkthrough-part-1-setup/
