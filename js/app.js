@@ -27,8 +27,11 @@ let cardDeck = ["fa fa-diamond", //Assign icon values to cards array
                "fa fa-bomb"];
 
 //***Call Functions to Begin Play***//
+debugger;
 shuffle(cardDeck);
+debugger;
 buildDeckElements();
+debugger;
 startGame();
 playGame();
 
@@ -69,7 +72,8 @@ function playGame(){
   deck.addEventListener('click', event => {
     const clickTarget = event.target;
   if(clickTarget.classList.contains('card')&&
-    selectedCards.length < 2){
+    selectedCards.length < 2&&
+    !selectedCards.includes(clickTarget)){
     selectCard(clickTarget);
     addSelectCard(clickTarget);
     addMove();
@@ -133,7 +137,7 @@ function match(){
     selectCard(selectedCards[0]);
     selectCard(selectedCards[1]);
     selectedCards = [];
-   }, 500);
+  }, 500);
   }
 }
 
@@ -232,13 +236,18 @@ function resetGame() {
   for (star of starList) {
     star.style.display = 'inline';
     }
-  resetCards();
+  selectedCards = [];
+  resetBoard();
   shuffle(cardDeck);
-  //buildDeckElements();
-  startGame();
-  playGame();
+  buildDeckElements();
 }
 
+//clears the board
+function resetBoard(){
+  deck.innerHTML = "";
+}
+
+//Restarts the game from the replay button on the gameOver modal
 function replayGame() {
   resetGame();
   toggleModalBody();
@@ -264,3 +273,7 @@ function getStars(){
 console.log(starCount);
 return starCount;
  }
+
+function clearGameBoard(){
+  deck.innerHTML ='';
+}
