@@ -27,11 +27,8 @@ let cardDeck = ["fa fa-diamond", //Assign icon values to cards array
                "fa fa-bomb"];
 
 //***Call Functions to Begin Play***//
-debugger;
 shuffle(cardDeck);
-debugger;
 buildDeckElements();
-debugger;
 startGame();
 playGame();
 
