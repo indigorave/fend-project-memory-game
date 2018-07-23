@@ -4,6 +4,7 @@
 
 * [Description](#description)
 * [Instructions](#instructions)
+* [Dependencies](#dependencies)
 * [Contributing](#contributing)
 * [Acknowledgements](#acknowledgements)
 
@@ -13,9 +14,8 @@ This memory game project was part of the FEND Grow with Google Scholarship progr
 ## Instructions
 The code for this project is written in html, css and javascript.  It requires a browser that supports ES6 and allows the player's browser to run scripts.
 
-## Required Resources
+## Dependencies
 https://fonts.googleapis.com/css?family=Coda
-
 
 ## Contributing
 As this project will become part of my portfolio, I will not be merging pull requests in to the project. Thank you for your understanding.

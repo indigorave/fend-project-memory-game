@@ -73,10 +73,11 @@ function playGame(){
     !selectedCards.includes(clickTarget)){
     selectCard(clickTarget);
     addSelectCard(clickTarget);
-    addMove();
+
   if (selectedCards.length === 2){//if the number of cards clicked is equal to 2, call the match and checkMoves functions
     match();
     checkMoves();
+    addMove();
   if (matches ===  pairs) {//if the number of matches equals the number of pairs, call the gameOver function
     gameOver();
     }
